@@ -8,7 +8,7 @@ img = cv2.imread(r"C:\Users\om\Desktop\CV\gg.jpg", cv2.IMREAD_COLOR)
 
 # Detect text using EasyOCR
 
-reader = easyocr.Reader(['en'], gpu=False)
+reader = easyocr.Reader(['ru', 'bg'], gpu=False)
 
 text_ = reader.readtext(img)
 
